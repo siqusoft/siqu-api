@@ -4,14 +4,6 @@ plugins {
 	id 'java'
 }
 
-buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
-  }
-}
 
 group = 'com.siqu.api'
 version = '0.0.1-SNAPSHOT'
