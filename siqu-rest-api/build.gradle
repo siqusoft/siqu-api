@@ -42,6 +42,12 @@ artifactory {
             username = "admin"
             password = "12345678"
         }
+	defaults {
+	    publications('mavenJava')
+	    publishArtifacts = true
+	    publishPom = true
+	   
+	}
     }
     resolve {
         repoKey = 'jcenter'
