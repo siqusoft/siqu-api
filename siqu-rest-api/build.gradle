@@ -46,6 +46,7 @@ artifactory {
 	    publications('mavenJava')
 	    publishArtifacts = true
 	    publishPom = true
+	    properties = ['qa.level': 'basic', 'dev.team': 'core']
 	   
 	}
     }
