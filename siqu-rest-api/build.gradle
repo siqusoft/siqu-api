@@ -33,3 +33,17 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+artifactory {
+    contextUrl = 'http://localhost:8082/artifactory'
+    publish {
+        repository {
+            repoKey = "libs-snapshot-local"
+            username = "admin"
+            password = "12345678"
+        }
+    }
+    resolve {
+        repoKey = 'jcenter'
+    }
+}
